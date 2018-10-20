@@ -29,14 +29,14 @@ struct MessageThreadsTableViewTestPage: TestPage {
     // Actions
     
     // finish typing in textfield
-    @discardableResult func typeTextIn(textField: XCUIElement, with text: String) -> MessageThreadsTableViewTestPage {
+    @discardableResult func typeTextIn(textField: XCUIElement, with text: String, file: String = #file, line: UInt = #line) -> MessageThreadsTableViewTestPage {
         testCase.expect(exists: textField)
         textField.tap()
         textField.typeText(text)
         return self
     }
     // tap on cell
-    @discardableResult func tapOnMessageThreadCell(index: Int) -> MessageThreadDetailTableViewTestPage {
+    @discardableResult func tapOnMessageThreadCell(index: Int, file: String = #file, line: UInt = #line) -> MessageThreadDetailTableViewTestPage {
         let cell = cellAt(index: index)
         testCase.expect(exists: cell)
         cell.tap()
