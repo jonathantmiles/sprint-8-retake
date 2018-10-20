@@ -14,16 +14,44 @@ struct MessageThreadDetailTableViewTestPage: TestPage {
     // Elements
     
     // title of the vc
+    var titleOfVC: XCUIElement {
+        return app.navigationBars.staticTexts.element
+    }
     // cells
+    func cellAt(index: Int) -> XCUIElement {
+        return app.tables.children(matching: .cell).element(boundBy: index)
+    }
     // title text
+    func cellTitle(index: Int) -> XCUIElement {
+        return cellAt(index: index).children(matching: .staticText).element
+    }
     // subtitle text
+    func cellSubtitle(index: Int) -> XCUIElement {
+        return cellAt(index: index).children(matching: .staticText).element
+    }
     // addNew button
+    var addButton: XCUIElement {
+        return app.navigationBars.staticTexts["Add"]
+    }
     // back button
+    var backButton: XCUIElement {
+        return app.navigationBars.staticTexts["λ Message Board"]
+    }
     
     // Actions
     
     // tap on addNew
+    @discardableResult func tapOnAddButton(file: String = #file, line: UInt = #line) -> MessageDetailViewTestPage {
+        testCase.expect(exists: addButton)
+        addButton.tap()
+        return MessageDetailViewTestPage(testCase: testCase)
+    }
     // tap on back button
+    @discardableResult func tapOnBackButton(file: String = #file, line: UInt = #line) -> MessageThreadsTableViewTestPage {
+        testCase.expect(exists: backButton)
+        backButton.tap()
+        return MessageThreadsTableViewTestPage(testCase: testCase)
+    }
     
     // Verifications
     
