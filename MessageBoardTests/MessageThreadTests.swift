@@ -45,5 +45,9 @@ class MessageThreadTests: XCTestCase {
         waitForExpectations(timeout: 15.0, handler: nil)
     }
     
+    // segue identifier from messageThreadDetailVC was misspelled; changed to "AddMessage"
+    // not sure if that belongs to these tests or to UITests
+    // also I won't be able to do real UI tests because none of my cells will populate :(
+    
     let messageThreadController = MessageThreadController()
 }

@@ -23,16 +23,16 @@ struct MessageThreadsTableViewTestPage: TestPage {
     }
     // textfield
     var messageTextField: XCUIElement {
-        return app.textFields["MessageThreadsTableViewController.TextField"]
+        return app.tables["Empty list"].textFields["Create a new thread:"]
     }
     
     // Actions
     
     // finish typing in textfield
-    @discardableResult func typeTextIn(textField: XCUIElement, with text: String, file: String = #file, line: UInt = #line) -> MessageThreadsTableViewTestPage {
-        testCase.expect(exists: textField)
-        textField.tap()
-        textField.typeText(text)
+    @discardableResult func typeTextIn(with text: String, file: String = #file, line: UInt = #line) -> MessageThreadsTableViewTestPage {
+        testCase.expect(exists: messageTextField)
+        messageTextField.tap()
+        messageTextField.typeText(text)
         return self
     }
     // tap on cell
