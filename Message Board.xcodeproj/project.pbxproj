@@ -22,6 +22,11 @@
 		46436033211ABC5800E7FF73 /* MessageThreadDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46436032211ABC5800E7FF73 /* MessageThreadDetailTableViewController.swift */; };
 		46436035211ABC6B00E7FF73 /* MessageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46436034211ABC6B00E7FF73 /* MessageDetailViewController.swift */; };
 		9D9B6B07214B7A7B006381F7 /* MessageThreadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9B6B06214B7A7B006381F7 /* MessageThreadTests.swift */; };
+		F8C4DC97217BB444006D3A78 /* XCTestCaseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C4DC96217BB444006D3A78 /* XCTestCaseExtension.swift */; };
+		F8C4DC99217BB527006D3A78 /* TestPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C4DC98217BB527006D3A78 /* TestPage.swift */; };
+		F8C4DC9D217BB6F0006D3A78 /* MessageThreadsTableViewTestPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C4DC9C217BB6F0006D3A78 /* MessageThreadsTableViewTestPage.swift */; };
+		F8C4DC9F217BB80B006D3A78 /* MessageThreadDetailTableViewTestPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C4DC9E217BB80B006D3A78 /* MessageThreadDetailTableViewTestPage.swift */; };
+		F8C4DCA1217BB941006D3A78 /* MessageDetailViewTestPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C4DCA0217BB941006D3A78 /* MessageDetailViewTestPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +68,11 @@
 		9D9B6AFC214B7A66006381F7 /* MessageBoardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MessageBoardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D9B6B00214B7A66006381F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D9B6B06214B7A7B006381F7 /* MessageThreadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageThreadTests.swift; sourceTree = "<group>"; };
+		F8C4DC96217BB444006D3A78 /* XCTestCaseExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestCaseExtension.swift; sourceTree = "<group>"; };
+		F8C4DC98217BB527006D3A78 /* TestPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPage.swift; sourceTree = "<group>"; };
+		F8C4DC9C217BB6F0006D3A78 /* MessageThreadsTableViewTestPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageThreadsTableViewTestPage.swift; sourceTree = "<group>"; };
+		F8C4DC9E217BB80B006D3A78 /* MessageThreadDetailTableViewTestPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageThreadDetailTableViewTestPage.swift; sourceTree = "<group>"; };
+		F8C4DCA0217BB941006D3A78 /* MessageDetailViewTestPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDetailViewTestPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,8 +145,13 @@
 		4629C7E7214BA09600E7FF73 /* Message BoardUITests */ = {
 			isa = PBXGroup;
 			children = (
+				F8C4DC96217BB444006D3A78 /* XCTestCaseExtension.swift */,
+				F8C4DC98217BB527006D3A78 /* TestPage.swift */,
 				4629C7E8214BA09600E7FF73 /* Message_BoardUITests.swift */,
 				4629C7EA214BA09600E7FF73 /* Info.plist */,
+				F8C4DC9C217BB6F0006D3A78 /* MessageThreadsTableViewTestPage.swift */,
+				F8C4DC9E217BB80B006D3A78 /* MessageThreadDetailTableViewTestPage.swift */,
+				F8C4DCA0217BB941006D3A78 /* MessageDetailViewTestPage.swift */,
 			);
 			path = "Message BoardUITests";
 			sourceTree = "<group>";
@@ -345,6 +360,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8C4DC9D217BB6F0006D3A78 /* MessageThreadsTableViewTestPage.swift in Sources */,
+				F8C4DC9F217BB80B006D3A78 /* MessageThreadDetailTableViewTestPage.swift in Sources */,
+				F8C4DCA1217BB941006D3A78 /* MessageDetailViewTestPage.swift in Sources */,
+				F8C4DC97217BB444006D3A78 /* XCTestCaseExtension.swift in Sources */,
+				F8C4DC99217BB527006D3A78 /* TestPage.swift in Sources */,
 				4629C7E9214BA09600E7FF73 /* Message_BoardUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
